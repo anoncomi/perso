@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS Y JS-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/splide.min.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="css/bootstrap-utilities.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/splide.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/73ef959013.js" crossorigin="anonymous"></script>
+  <title>Artesanys - El bazar de artistas</title>
+</head>
+
+<body>
+  <!--Banner-->
+  <div class="px-4 py-5 bg-rosa text-center bannercontacto text-bg-dark" style="background-image: url(img/b7.jpg);">
+      <h1 class="categoria fw-bold mb-5 mt-5 pt-5">¿Cómo te podemos ayudar?</h1>
+      <div class="d-flex justify-content-center">
+        <form class="d-flex col-6" role="search">
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar una pregunta..." aria-label="Buscar">
+          <button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass" style="color:white;"></i></button>
+        </form>
+      </div>
+  </div>
+<!--Articulos recomendados-->
+  
+  <div class="px-4 pt-5 border-bottom text-center">
+    <div class="row justify-content-center">
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link categoria text-muted active mx-2" data-bs-toggle="tab" href="#vendedor"> Contactar con el vendedor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link categoria text-muted mx-2" data-bs-toggle="tab" href="#soporte"> Contactar con soporte técnico</a>
+        </li>
+      </ul>
+  </div>
+
+  <div class="py-5">
+    <div class="tab-content justify-content-center">
+      <!-- Tab vendedor-->
+      
+      <div class="tab-pane container active" id="vendedor">
+        <h1 class="texto-secciones mb-4 pb-3">Soporte para clientes</h1>
+
+        <form class="needs-validation" validate>
+          <div class="mb-3 mt-3 row d-flex justify-content-center">
+            <label for="nombre" class="col-md-2 col-form-label">Nombre</label>
+            <div class="col-md-5">
+              <input type="nombre" class="form-control rounded-pill" id="nombre" required>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3 row d-flex justify-content-center">
+            <label for="correo" class="col-md-2 col-form-label">Correo</label>
+            <div class="col-md-5">
+              <input type="nombre" class="form-control rounded-pill" id="correo" required>
+            </div>
+          </div>
+
+          <div class="container col-md-7 mt-2 mb-4">
+            <textarea class="form-control bordes" id="asunto" rows="5" placeholder="Describe el problema..." required></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-dark col-md-7 col-12" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+        <!-- Tab soporte-->
+        <div class="tab-pane container fade" id="soporte">
+          <h1 class="texto-secciones mb-4 pb-3">Soporte general</h1>
+          <form class="needs-validation" validate>
+            <div class="mb-3 mt-3 row d-flex justify-content-center">
+              <label for="nombre" class="col-md-2 col-form-label">Nombre</label>
+              <div class="col-md-5">
+                <input type="nombre" class="form-control rounded-pill" id="nombre" required>
+              </div>
+            </div>
+  
+            <div class="mb-3 mt-3 row d-flex justify-content-center">
+              <label for="correo" class="col-md-2 col-form-label">Correo</label>
+              <div class="col-md-5">
+                <input type="nombre" class="form-control rounded-pill" id="correo" required>
+              </div>
+            </div>
+  
+            <div class="container col-md-7 mt-2 mb-4">
+              <textarea class="form-control bordes" id="asunto" rows="5" placeholder="Describe el problema..." required></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-dark col-md-7 col-12" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+        
+    </div>
+  </div>
+
+
+
+    </div>
+  </div> 
+  
+</div>
+
+</body>
+
+    <!--Footer-->
+<div class="container-fluid p-3 pt-0 bg-light">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mt-0 border-top">
+
+    <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+      <a class="navbar-brand logo-text ms-4" href="index.html">Artesanys</a>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-xl-end justify-content-center">
+    <ul class="nav justify-content-md-end justify-content-center list-unstyled d-flex">
+      <li class="ms-4"><span class="mb-3 mb-md-0 text-muted">© Artesanys 2023</span></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="index.html">INICIO</a></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text active" href="#">CONTACTO</a></li>
+    </ul>
+  </footer>
+  </div>
+
+
+</div>
+</html>

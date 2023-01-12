@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS Y JS-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/splide.min.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="css/bootstrap-utilities.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/splide.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/73ef959013.js" crossorigin="anonymous"></script>
+  <title>Artesanys - El bazar de artistas</title>
+</head>
+
+<body>
+  <div class="container mt-4 d-flex">
+    <div class="row gx-5 d-flex">
+        <div class="mt-4 col-lg-8 col-12 item">
+          <section id="mproducto" class="splide" aria-label="carrusel-producto">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide2"><a href="../images/img-1.jpg" data-lightbox="nose"><img src="../images/img-1.jpg" alt=""></a></li>
+                    <li class="splide__slide2"><a href="../images/img-1.jpg" data-lightbox="nose"><img src="../images/img-2.jpg" alt=""></a></li>
+                    <li class="splide__slide2"><a href="../images/img-1.jpg" data-lightbox="nose"><img src="../images/img-3.jpg" alt=""></a></li>
+                    <li class="splide__slide2"><a href="../images/img-1.jpg" data-lightbox="nose"><img src="../images/img-4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="cproducto" class="splide mt-4" aria-label="carrusel-producto">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide1"><img src="../images/img-1.jpg" alt=""></li>
+                    <li class="splide__slide1"><img src="../images/img-2.jpg" alt=""></li>
+                    <li class="splide__slide1"><img src="../images/img-3.jpg" alt=""></li>
+                    <li class="splide__slide1"><img src="../images/img-4.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <script>
+          document.addEventListener( 'DOMContentLoaded', function () {
+            var main = new Splide( '#mproducto', {
+            fixedHeight: 475,
+            type      : 'fade',
+            rewind    : true,
+            pagination: false,
+            arrows    : false,
+            classes: {
+              slide:'splide__slide splide__slide2',
+            }
+            } );
+
+            var iconos = new Splide( '#cproducto', {
+                    fixedWidth: 100,
+                    fixedHeight: 80,
+                    gap       : 10,
+                    rewind    : true,
+                    pagination: false,
+                    isNavigation: true,
+                    focus: 'center',
+                    mediaQuery: 'min',
+                    breakpoints: {
+                    400: {
+                    fixedWidth : 60,
+                    fixedHeight: 44,
+                    },
+                    classes: {
+                    slide: 'splide__slide splide__slide1',
+                 },
+                },
+            } );
+
+            main.sync( iconos );
+            main.mount();
+            iconos.mount();
+        } );  
+        </script>
+        </div>
+        <div class=" col-lg-4 col-12 desc p-5 overflow-auto">
+            <p class="vendedor">Vendido por <a href="#" class="text-muted">AerianVal</a><span class="mx-2">|</span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-1"></i>
+            (32)</p>
+            <h1 class="texto-secciones">Aretes con forma de corazón</h1>
+            <h2 class="precio mt-3">$359.00 MXN</h2>
+            <p class="vendedor">Impuestos locales incluidos.</p>
+            <button class="btn btn-dark w-100">Añadir al carrito</button>
+            <button class="btn btn-light w-100 mt-2"><i class="fa-regular fa-heart me-2"></i> Añadir a favoritos</button>
+            <div class="alert alert-warning p-3 mt-3 text-center">¡Sólo quedan 13 en stock!</div>
+            <div class="accordion mt-3" id="acordeon">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <strong>Descripción del artículo</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#acordeon">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong>Detalles del vendedor</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#acordeon">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+
+    <!--Footer-->
+<div class="container-fluid p-3 pt-0 bg-light">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mt-0 border-top">
+
+    <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+      <a class="navbar-brand logo-text ms-4" href="index.html">Artesanys</a>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-xl-end justify-content-center">
+    <ul class="nav justify-content-md-end justify-content-center list-unstyled d-flex">
+      <li class="ms-4"><span class="mb-3 mb-md-0 text-muted">© Artesanys 2023</span></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="index.html">INICIO</a></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="llaveros.html">LLAVEROS</a></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="pendientes.html">PENDIENTES</a></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="stickers.html">STICKERS</a></li>
+      <li class="ms-4"><a class="text-muted text-decoration-none nav-text active" href="#">CONTACTO</a></li>
+    </ul>
+  </div>
+
+  </footer>
+</div>
+</html>

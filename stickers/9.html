@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS Y JS-->
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/carrusel.css" rel="stylesheet">
+  <link href="../css/splide.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/lightbox.min.css" rel="stylesheet">
+  <script src="../js/carrusel.js"></script>
+  <script src="../js/lightbox-plus-jquery.min.js"></script>
+  <script src="../js/splide.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/73ef959013.js" crossorigin="anonymous"></script>
+  <title>Artesanys - El bazar de artistas</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl bg-light border-bottom flex-nowrap">  
+      <div class="container">
+      <a class="navbar-brand logo-text" href="../index.html">Artesanys</a>
+    <!--Barra búsqueda-->
+      <form class="d-flex col-md-9 d-none d-sm-flex" role="search">
+        <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar un artículo..." aria-label="Buscar">
+        <button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    <!--Boton menu-->
+    <ul class="nav ms-auto">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </ul>
+    <!--Iconos derecha menu-->
+      <div class="collapse navbar-collapse col-md-2" id="menu">
+        <ul class="navbar-nav flex-wrap text-dark">
+          <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-regular fa-heart"></i></button>
+                <small class="d-xl-none ms-2">Favoritos</small>  
+            </li>
+            <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-solid fa-cart-shopping"></i></button>
+              <small class="d-xl-none ms-2">Carrito</small>  
+            </li>
+            <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-regular fa-user"></i></button>
+              <small class="d-xl-none ms-2">Perfil</small>
+            </li>
+            <hr class="d-xl-none text-dark d-md-none">
+          </ul>
+      </div>
+      <hr class="d-xl-none text-dark">
+      </div>
+  </nav>
+
+  <!--Menú secundario-->
+  <nav class="navbar navbar-expand-xl border-bottom fs-7 py-0 bg-rosa">
+    <div class="container d-flex justify-content-center">
+    <ul class="nav col-12 col-md-auto justify-content-center">
+        <li><a href="../index.html" class="nav-link px-3 py-2 nav-text text-muted">INICIO</a></li>
+        <li><a href="../llaveros.html" class="nav-link px-3 py-2 nav-text text-muted">LLAVEROS</a></li>
+        <li><a href="../pendientes.html" class="nav-link px-3 py-2 nav-text text-muted">PENDIENTES</a></li>
+        <li><a href="../stickers.html" class="nav-link px-3 py-2 nav-text text-muted">STICKERS</a></li>
+        <li><a href="../contacto.html" class="nav-link px-3 py-2 nav-text text-muted">CONTACTO</a></li>
+      </ul>
+  </div>
+  </nav>
+
+    <!--Artículo-->
+    <div class="container mt-4 d-flex">
+        <div class="row gx-5 d-flex">
+            <div class="mt-4 col-lg-8 col-12 item">
+                <section id="mproducto" class="splide" aria-label="carrusel-producto">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><a href="../img/l9-1.webp" data-lightbox="llaveros"><img src="../img/l9-1.webp" alt=""></a></li>
+                            <li class="splide__slide"><a href="../img/l9-2.webp" data-lightbox="llaveros"><img src="../img/l9-2.webp" alt=""></a></li>
+                            <li class="splide__slide"><a href="../img/l9-3.webp" data-lightbox="llaveros"><img src="../img/l9-3.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                </section></a>
+                <section id="cproducto" class="splide mt-4" aria-label="carrusel-producto">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="../img/l9-1.webp" alt=""></li>
+                            <li class="splide__slide"><img src="../img/l9-2.webp" alt=""></li>
+                            <li class="splide__slide"><img src="../img/l9-3.webp" alt=""></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class=" col-lg-4 col-12 desc p-5 overflow-auto">
+                <p class="vendedor">Vendido por <a href="#" class="text-muted">MyLittleAngelArts</a><span class="mx-2">|</span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-1"></i>
+                (1,270)</p>
+                <h1 class="texto-secciones">Paquete 46 piezas de pegatinas en forma de sello vintage</h1>
+                <h2 class="precio mt-3">$74.07 MXN</h2>
+                <p class="vendedor">Impuestos locales incluidos.</p>
+                <button class="btn btn-dark w-100">Añadir al carrito</button>
+                <button class="btn btn-light w-100 mt-2"><i class="fa-regular fa-heart me-2"></i> Añadir a favoritos</button>
+                <div class="alert alert-light p-3 mt-3 text-center">Disponibles: 478
+                </div>
+                <div class="accordion mt-3" id="acordeon">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <strong>Descripción del artículo</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                          Estas encantadoras pegatinas son perfectas para tarjetas hechas a mano, sobres, paquetes. Envoltorio de regalo. También es bueno para diarios, diarios, álbumes de recortes y álbumes de fotos, calendarios, manualidades de bricolaje.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <strong>Especificaciones</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>Material: Pegatina de papel adhesivo con film plástico.</li>
+                            <li>Dimensiones del paquete: 14.3cm x 9.3cm</li>
+                            <li>Pegatinas por paquete: 46pcs (23 diseños, 2pcs para cada diseño).</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Articulos recomendados-->
+    <div class="container px-4 py-2">
+    <h2 class="pb-2 border-bottom logo-text texo-secciones">Artículos recomendados</h2>
+    <div class="container py-3 mb-5">
+      <div class="row">
+        
+    
+      <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="tarjeta">
+          <a href="../stickers/8.html"><img src="../img/l8-1.webp" class="imagen"></a>
+          <ul>
+              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          </ul>
+          </div>
+          <div class="titulo">
+          <a href="../stickers/8.html" class="nav-link">Vintage green stickers paquete de 47 piezas</a>
+          </div>
+          <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+              $61.73 MXN
+          </li>
+          <li class="d-flex align-items-center">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+          (17)
+          </li>
+          </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="tarjeta">
+          <a href="../stickers/10.html"><img src="../img/l10-1.webp" class="imagen"></a>
+          <ul>
+              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          </ul>
+          </div>
+          <div class="titulo">
+          <a href="../stickers/10.html" class="nav-link">Paquete de 46 stickers Retro para Bullet Journal</a>
+          </div>
+          <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+              $50.82 MXN
+          </li>
+          <li class="d-flex align-items-center">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+          (32)
+          </li>
+          </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="tarjeta">
+          <a href="../stickers/1.html"><img src="../img/l1-1.webp" class="imagen"></a>
+          <ul>
+              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          </ul>
+          </div>
+          <div class="titulo">
+          <a href="../stickers/1.html" class="nav-link">Póster de pegatina arco iris autoadhesivo</a>
+          </div>
+          <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+              $49.38 MXN
+          </li>
+          <li class="d-flex align-items-center">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+          (360)
+          </li>
+          </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="tarjeta">
+          <a href="../stickers/2.html"><img src="../img/l2-1.webp" class="imagen"></a>
+          <ul>
+              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          </ul>
+          </div>
+          <div class="titulo">
+          <a href="../stickers/2.html" class="nav-link">Paquete x5 Spirit Fighters Anime Vinyl Stickers</a>
+          </div>
+          <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+              $92.59 MXN
+          </li>
+          <li class="d-flex align-items-center">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+          (1,270)
+          </li>
+          </ul>
+      </div>
+
+      </div>
+    </div>
+</div>
+
+</body>
+    <!--Footer-->
+    <div class="container-fluid p-3 pt-0 bg-light">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mt-0 border-top">
+      
+          <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+            <a class="navbar-brand logo-text ms-4" href="index.html">Artesanys</a>
+          </div>
+      
+          <div class="col-md-6 d-flex justify-content-xl-end justify-content-center">
+          <ul class="nav justify-content-md-end justify-content-center list-unstyled d-flex">
+            <li class="ms-4"><span class="mb-3 mb-md-0 text-muted">© Artesanys 2023</span></li>
+            <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="index.html">VENDE CON NOSOTROS</a></li>
+            <li class="ms-4"><a class="text-muted text-decoration-none nav-text active" href="#">SOPORTE</a></li>
+          </ul>
+        </div>
+      
+        </footer>
+      </div>
+</html>

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS Y JS-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/splide.min.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="css/bootstrap-utilities.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/splide.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/73ef959013.js" crossorigin="anonymous"></script>
+  <title>Artesanys - El bazar de artistas</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl bg-light border-bottom flex-nowrap">  
+      <div class="container">
+      <a class="navbar-brand logo-text" href="index.html">Artesanys</a>
+    <!--Barra búsqueda-->
+      <form class="d-flex col-md-9 d-none d-sm-flex" role="search">
+        <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar un artículo..." aria-label="Buscar">
+        <button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    <!--Boton menu-->
+    <ul class="nav ms-auto">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </ul>
+    <!--Iconos derecha menu-->
+      <div class="collapse navbar-collapse col-md-2" id="menu">
+        <ul class="navbar-nav flex-wrap text-dark">
+          <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-regular fa-heart"></i></button>
+                <small class="d-xl-none ms-2">Favoritos</small>  
+            </li>
+            <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-solid fa-cart-shopping"></i></button>
+              <small class="d-xl-none ms-2">Carrito</small>  
+            </li>
+            <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-regular fa-user"></i></button>
+              <small class="d-xl-none ms-2">Perfil</small>
+            </li>
+            <hr class="d-xl-none text-dark d-md-none">
+          </ul>
+      </div>
+      <hr class="d-xl-none text-dark">
+      </div>
+  </nav>
+
+  <!--Menú secundario-->
+  <nav class="navbar navbar-expand-xl border-bottom fs-7 py-0 bg-rosa">
+    <div class="container d-flex justify-content-center">
+    <ul class="nav col-12 col-md-auto justify-content-center">
+        <li><a href="index.html" class="nav-link px-3 py-2 nav-text text-muted">INICIO</a></li>
+        <li><a href="llaveros.html" class="nav-link px-3 py-2 nav-text text-muted">LLAVEROS</a></li>
+        <li><a href="pendientes.html" class="nav-link px-3 py-2 nav-text text-muted">PENDIENTES</a></li>
+        <li><a href="stickers.html" class="nav-link px-3 py-2 nav-text text-muted">STICKERS</a></li>
+        <li><a href="contacto.html" class="nav-link px-3 py-2 nav-text text-muted">CONTACTO</a></li>
+      </ul>
+  </div>
+  </nav>
+
+    <!--Banner-->
+  <div class="container mt-4 py-3">
+    <div class="p-4 p-md-5 rounded banner text-bg-dark" style="background-image: url(img/b5.jpg);">
+        <div class="col-md-12 px-0 pt-4">
+          <h1 class="display-5 categoria text-center mt-4">Pendientes</h1>
+          <p class="lead my-2 text-center">Escoge entre nuestra amplia selección de aretes para todos los gustos y colores.</p>
+        </div>
+      </div>
+  </div>
+
+    <!--Articulos recomendados-->
+    <div class="container px-4 py-2">
+        <h2 class="pb-2 border-bottom"></h2>
+        <div class="container py-3 mt-3">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/1.html"><img src="img/p1-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/1.html" class="nav-link">Pendientes chapados en oro hechos a mano con flores</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $517.28 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (232)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/2.html"><img src="img/p2-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/2.html" class="nav-link">Pendientes de confeti floral, Joyería botánica</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $518.17 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (3,852)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/3.html"><img src="img/p3-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/3.html" class="nav-link">Set de 4 piezas de aretes de oro minimalistas</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $348.98 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (1,418)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/4.html"><img src="img/p4-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/4.html" class="nav-link">Juego de pendientes de aro de estrella y luna</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $345.43 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (2,549)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/5.html"><img src="img/p5-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/5.html" class="nav-link">Pendientes saturno de ópalo blanco en chapa de oro</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $344.44 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (71)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/6.html"><img src="img/p6-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/6.html" class="nav-link">Pequeños pendientes de tachuelas vintage de ópalo</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $321.43 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (244)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/7.html"><img src="img/p7-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/7.html" class="nav-link">Pendientes pequeños de ópalo blanco de 6mm y 3mm</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $2,020.41 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (50)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/8.html"><img src="img/p8-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/8.html" class="nav-link">Pendientes Moonstone Stud de plata de ley</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $255.03 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke pe-2"></i>
+                    (190)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/9.html"><img src="img/p9-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/9.html" class="nav-link">Pendientes de campanas florales en oro 14k</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $264.29 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke pe-2"></i>
+                    (384)
+                    </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="tarjeta">
+                    <a href="pendientes/10.html"><img src="img/p10-1.webp" class="imagen"></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="titulo">
+                    <a href="pendientes/10.html" class="nav-link">Pendientes Raindow Moonstone de plata esterlina</a>
+                    </div>
+                    <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                        $673.06 MXN
+                    </li>
+                    <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+                    (51)
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+</body>
+    <!--Footer-->
+    <div class="container-fluid p-3 pt-0 bg-light">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mt-0 border-top">
+      
+          <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+            <a class="navbar-brand logo-text ms-4" href="index.html">Artesanys</a>
+          </div>
+      
+          <div class="col-md-6 d-flex justify-content-xl-end justify-content-center">
+          <ul class="nav justify-content-md-end justify-content-center list-unstyled d-flex">
+            <li class="ms-4"><span class="mb-3 mb-md-0 text-muted">© Artesanys 2023</span></li>
+            <li class="ms-4"><a class="text-muted text-decoration-none nav-text" href="index.html">VENDE CON NOSOTROS</a></li>
+            <li class="ms-4"><a class="text-muted text-decoration-none nav-text active" href="#">SOPORTE</a></li>
+          </ul>
+        </div>
+      
+        </footer>
+      </div>
+</html>

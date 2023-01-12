@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS Y JS-->
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/carrusel.css" rel="stylesheet">
+  <link href="../css/splide.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/lightbox.min.css" rel="stylesheet">
+  <script src="../js/carrusel.js"></script>
+  <script src="../js/lightbox-plus-jquery.min.js"></script>
+  <script src="../js/splide.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/73ef959013.js" crossorigin="anonymous"></script>
+  <title>Artesanys - El bazar de artistas</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl bg-light border-bottom flex-nowrap">  
+      <div class="container">
+      <a class="navbar-brand logo-text" href="../index.html">Artesanys</a>
+    <!--Barra búsqueda-->
+      <form class="d-flex col-md-9 d-none d-sm-flex" role="search">
+        <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar un artículo..." aria-label="Buscar">
+        <button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    <!--Boton menu-->
+    <ul class="nav ms-auto">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </ul>
+    <!--Iconos derecha menu-->
+      <div class="collapse navbar-collapse col-md-2" id="menu">
+        <ul class="navbar-nav flex-wrap text-dark">
+          <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-regular fa-heart"></i></button>
+                <small class="d-xl-none ms-2">Favoritos</small>  
+            </li>
+            <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-solid fa-cart-shopping"></i></button>
+              <small class="d-xl-none ms-2">Carrito</small>  
+            </li>
+            <li class="nav-item p-1">
+            <button class="btn rounded-pill"><i class="fa-regular fa-user"></i></button>
+              <small class="d-xl-none ms-2">Perfil</small>
+            </li>
+            <hr class="d-xl-none text-dark d-md-none">
+          </ul>
+      </div>
+      <hr class="d-xl-none text-dark">
+      </div>
+  </nav>
+
+  <!--Menú secundario-->
+  <nav class="navbar navbar-expand-xl border-bottom fs-7 py-0 bg-rosa">
+    <div class="container d-flex justify-content-center">
+    <ul class="nav col-12 col-md-auto justify-content-center">
+      <li><a href="index.html" class="nav-link px-3 py-2 nav-text text-muted">INICIO</a></li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle nav-text text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          OFERTAS Y REBAJAS
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="OFERTAS Y REBAJAS | Hasta 50% de descuento">Hasta 50% de descuento</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="OFERTAS Y REBAJAS | Ofertas 2x1, 3x2 y más">Ofertas 2x1, 3x2 y más</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="OFERTAS Y REBAJAS | Ofertas de temporada">Ofertas de temporada</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="OFERTAS Y REBAJAS | Ofertas por categoría">Ofertas por categoría</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle nav-text text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ACCESORIOS
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Bolsos y mochilas">Bolsos y mochilas</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Llaveros">Llaveros</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Cinturones">Cinturones</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Lentes">Lentes</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Gorros y bufandas">Gorros y bufandas</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Corbatas">Corbatas</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ACCESORIOS | Otros">Otros</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle nav-text text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          JOYERÍA
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="JOYERÍA | Aretes">Aretes</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="JOYERÍA | Collares">Collares</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="JOYERÍA | Anillos">Anillos</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="JOYERÍA | Pulseras">Pulseras</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="JOYERÍA | Otros">Otros</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle nav-text text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ROPA Y CALZADO
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ROPA Y CALZADO | Playeras">Playeras</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ROPA Y CALZADO | Vestidos">Vestidos</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../abrigos.html" title="ROPA Y CALZADO | Suéteres y abrigos">Suéteres y abrigos</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ROPA Y CALZADO | Lencería">Lencería</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ROPA Y CALZADO | Pijamas">Pijamas</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ROPA Y CALZADO | Calcetines y zapatos">Calcetines y zapatos</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ROPA Y CALZADO | Otros">Otros</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle nav-text text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          HOGAR
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="HOGAR | Accesorios de cocina">Accesorios de cocina</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="HOGAR | Alfombras">Alfombras</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="HOGAR | Ropa de cama">Ropa de cama</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="HOGAR | Muebles">Muebles</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="HOGAR | Mascotas">Mascotas</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle nav-text text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ARTE
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ARTE | Vitralería">Vitralería</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ARTE | Esculturas">Esculturas</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ARTE | Pinturas">Pinturas</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ARTE | Grabado">Grabado</a></li>
+          <li><a class="dropdown-item nav-text py-2" href="../404.html" title="ARTE | Otros">Otros</a></li>
+        </ul>
+      </li>
+      </ul>
+  </div>
+  </nav>
+
+    <!--Artículo-->
+    <div class="container mt-4 d-flex">
+        <div class="row gx-5 d-flex">
+            <div class="mt-4 col-lg-8 col-12 item">
+                <section id="mproducto" class="splide" aria-label="carrusel-producto">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><a href="../img/a4-1.webp" data-lightbox="llaveros"><img src="../img/a4-1.webp" alt=""></a></li>
+                            <li class="splide__slide"><a href="../img/a4-2.webp" data-lightbox="llaveros"><img src="../img/a4-2.webp" alt=""></a></li>
+                            <li class="splide__slide"><a href="../img/a4-3.webp" data-lightbox="llaveros"><img src="../img/a4-3.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                </section></a>
+                <section id="cproducto" class="splide mt-4" aria-label="carrusel-producto">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="../img/a4-1.webp" alt=""></li>
+                            <li class="splide__slide"><img src="../img/a4-2.webp" alt=""></li>
+                            <li class="splide__slide"><img src="../img/a4-3.webp" alt=""></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class=" col-lg-4 col-12 desc p-5 overflow-auto">
+                <p class="vendedor">Vendido por <a href="#" class="text-muted">Linennaive</a><span class="mx-2">|</span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-1"></i>
+                (89)</p>
+                <h1 class="texto-secciones">Capa de abrigo de lana con capucha, 100% cachemira</h1>
+                <h2 class="precio mt-3">$4,760.96 MXN</h2>
+                <p class="vendedor">Impuestos locales incluidos.</p>
+                <button class="btn btn-dark w-100">Añadir al carrito</button>
+                <button class="btn btn-light w-100 mt-2"><i class="fa-regular fa-heart me-2"></i> Añadir a favoritos</button>
+                <div class="alert alert-light p-3 mt-3 text-center">Disponibles: 45</div>
+                <div class="accordion mt-3" id="acordeon">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <strong>Descripción del artículo</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                          Lana de Cachemira: Difícilmente se puede encontrar material de tan alta gama en este mercado. Totalmente alineado, amigable con la piel. Panel de botones de estilo militar, fondo de vestido favorecedor, capucha de gran tamaño, fuerte sentido de presencia.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <strong>Especificaciones</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <ul>
+                            <li>Forro caliente por dentro para el frío.</li>
+                            <li>Largo: 125 cm.</li>
+                            <li>Tallas: XS, S, M, L, XL, XXL.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Articulos recomendados-->
+    <div class="container px-4 py-2">
+    <h2 class="pb-2 border-bottom logo-text texo-secciones">Artículos recomendados</h2>
+    <div class="container py-3 mb-5">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="tarjeta">
+              <a href="../sueteres/1.html"><img src="../img/a1-1.webp" class="imagen"></a>
+              <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+              </ul>
+              </div>
+              <div class="titulo">
+              <a href="../sueteres/1.html" class="nav-link">Chaqueta abrigo de piel sintética con cremallera</a>
+              </div>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                $1,180.26 MXN
+              </li>
+              <li class="d-flex align-items-center">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+              (23)
+              </li>
+              </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="tarjeta">
+              <a href="../sueteres/2.html"><img src="../img/a2-1.webp" class="imagen"></a>
+              <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+              </ul>
+              </div>
+              <div class="titulo">
+              <a href="../sueteres/2.html" class="nav-link">Abrigo café tipo hoodie invernal largo para mujer</a>
+              </div>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                $1,480.69 MXN
+              </li>
+              <li class="d-flex align-items-center">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+              (26)
+              </li>
+              </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="tarjeta">
+              <a href="../sueteres/3.html"><img src="../img/a3-1.webp" class="imagen"></a>
+              <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+              </ul>
+              </div>
+              <div class="titulo">
+              <a href="../sueteres/3.html" class="nav-link">Abrigo de lana con capucha de un solo broche para mujer</a>
+              </div>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                $2,852.59 MXN
+              </li>
+              <li class="d-flex align-items-center">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+              (331)
+              </li>
+              </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="tarjeta">
+              <a href="../sueteres/4.html"><img src="../img/a4-1.webp" class="imagen"></a>
+              <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+              </ul>
+              </div>
+              <div class="titulo">
+              <a href="../sueteres/4.html" class="nav-link">Capa de abrigo de lana con capucha, 100% cachemira</a>
+              </div>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                $4,760.96 MXN
+              </li>
+              <li class="d-flex align-items-center">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star pe-2"></i>
+              (89)
+              </li>
+              </ul>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+    <!--Footer-->
+    <div class="container-fluid p-3 pt-0 bg-light">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 mt-0 border-top">
+      
+          <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+            <a class="navbar-brand logo-text ms-4" href="index.html">Artesanys</a>
+          </div>
+      
+          <div class="col-md-6 d-flex justify-content-xl-end justify-content-center">
+          <ul class="nav justify-content-md-end justify-content-center list-unstyled d-flex">
+            <li class="ms-4"><span class="mb-3 mb-md-0 text-muted">© Artesanys 2023</span></li>
+            <sueteres class="ms-4"><a class="text-muted text-decoration-none nav-text active" href="#">SOPORTE</a></li>
+          </ul>
+        </div>
+      
+        </footer>
+      </div>
+</html>
